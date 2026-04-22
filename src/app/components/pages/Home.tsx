@@ -472,8 +472,8 @@ export function Home() {
                     <MapPin className="text-cobalto" size={20} />
                   </div>
                   <div>
-                    <div className="text-navy-dark">Calle Fe 123</div>
-                    <div className="text-pizarra text-sm">Ciudad, Provincia 1234</div>
+                    <div className="text-navy-dark">Calle Diego Maria claret 13</div>
+                    <div className="text-pizarra text-sm">Centro-casco antiguo, Cáceres 10002</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
