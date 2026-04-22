@@ -168,10 +168,10 @@ export function Root() {
               <ul className="space-y-3 text-acero">
                 <li className="flex items-start gap-3">
                   <MapPin size={16} className="mt-1 flex-shrink-0 text-cian-link" />
-                  <span>Calle Fe 123<br />Ciudad, Provincia 1234</span>
+                  <span>Calle Diego Maria Claret 13<br />Cáceres, Cáceres 10002</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone size={16} className="text-cian-link" /> (555) 123-4567
+                  <Phone size={16} className="text-cian-link" /> (+34) 000-000-000
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail size={16} className="text-cian-link" /> info@iglesiacristolaroca.org
