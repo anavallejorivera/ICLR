@@ -422,7 +422,7 @@ export function Home() {
             </div>
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8">
               <div className="grid grid-cols-3 gap-3 mb-6">
-                {["$25", "$50", "$100"].map((v) => (
+                {["10€", "50€", "100€"].map((v) => (
                   <button
                     key={v}
                     className="py-3 rounded-xl border border-white/30 hover:bg-oro hover:border-oro hover:text-navy-dark transition-all"
