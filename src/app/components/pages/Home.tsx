@@ -278,7 +278,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Encontrá tu lugar
+              Encuentra tu lugar
             </span>
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6">
               Ministerios para cada <span className="italic text-cobalto">temporada</span>
@@ -328,7 +328,7 @@ export function Home() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Historias de gracia
+              Testimonios
             </span>
             <h2 className="text-4xl md:text-5xl text-navy-dark">De nuestra familia</h2>
           </div>
@@ -461,7 +461,7 @@ export function Home() {
             </div>
             <div>
               <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-                Venís como sos
+                Ven como eres
               </span>
               <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
                 Visitanos este domingo
