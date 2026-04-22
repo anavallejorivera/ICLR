@@ -449,7 +449,7 @@ export function Home() {
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-[4/3]">
               <iframe
                 title="Church location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-74.01,40.705,-73.99,40.72&layer=mapnik"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.9109244267!2d-6.3747411000000005!3d39.471340999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd15dfc2ec532e99%3A0x29b57ced51a7e6b7!2sIglesia%20Evangelica%20Cristo%20La%20Roca!5e0!3m2!1ses!2ses!4v1776856506883!5m2!1ses!2ses"
                 className="w-full h-full border-0"
               />
             </div>
@@ -466,7 +466,7 @@ export function Home() {
                     <MapPin className="text-cobalto" size={20} />
                   </div>
                   <div>
-                    <div className="text-navy-dark">Calle Diego Maria claret 13</div>
+                    <div className="text-navy-dark">Calle Diego Maria crehuet 13</div>
                     <div className="text-pizarra text-sm">Centro-casco antiguo, Cáceres 10002</div>
                   </div>
                 </div>
