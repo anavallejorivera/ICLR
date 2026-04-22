@@ -100,7 +100,7 @@ export function Home() {
                 Domingos a las 9:00 AM y 11:00 AM
               </span>
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 leading-tight tracking-tight">
-                Acá es tu <span className="text-oro italic">lugar</span>.
+                Este es tú <span className="text-oro italic">lugar</span>.
               </h1>
               <p className="text-lg md:text-2xl text-white/85 mb-10 max-w-2xl leading-relaxed">
                 Una comunidad cálida y acogedora donde la fe, la esperanza y el amor cobran vida juntos.
