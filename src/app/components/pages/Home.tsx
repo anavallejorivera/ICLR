@@ -210,13 +210,7 @@ export function Home() {
               </a>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black group cursor-pointer">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/watch?v=-fz292HNU_w&list=RD-fz292HNU_w&start_radio=1"
-                title="Latest sermon"
-                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                allowFullScreen
-              />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-fz292HNU_w?si=QiRTJkhu0oBfJ-Ap&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
