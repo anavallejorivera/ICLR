@@ -115,7 +115,7 @@ export function Meetings() {
                   <Coffee className="text-naranja" size={22} />
                 </div>
                 <div>
-                  <div className="text-navy-dark">Café después</div>
+                  <div className="text-navy-dark">Cafetería</div>
                   <div className="text-sm text-pizarra">Todos los domingos</div>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export function Meetings() {
           <div className="grid md:grid-cols-3 gap-8 mb-10">
             {[
               { icon: MapPin, color: "cobalto", title: "Dónde", body: "Calle Fe 123\nCiudad, Provincia 1234" },
-              { icon: Users, color: "naranja", title: "Vestimenta", body: "Venís como sos.\nLo casual está perfecto." },
+              { icon: Users, color: "naranja", title: "Vestimenta", body: "Vienes tal como eres.\nLo casual está perfecto." },
               { icon: Clock, color: "oro", title: "Llegá temprano", body: "15 minutos antes\npara café y saludos." },
             ].map((i) => {
               const Icon = i.icon;
@@ -305,7 +305,7 @@ export function Meetings() {
               to="/contact"
               className="inline-flex items-center gap-2 bg-cobalto hover:bg-cobalto/90 text-white px-7 py-4 rounded-xl transition-all shadow-lg shadow-cobalto/20 hover:-translate-y-0.5"
             >
-              Avisanos que venís <ArrowRight size={16} />
+              Avisanos que vienes <ArrowRight size={16} />
             </Link>
           </div>
         </div>
