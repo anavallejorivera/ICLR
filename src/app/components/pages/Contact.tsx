@@ -329,12 +329,14 @@ export function Contact() {
                 <MapPin size={16} /> Cómo llegar
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <Link
+
+              {/* <Link
                 to="/meetings"
                 className="inline-flex items-center gap-2 border border-acero/30 hover:border-cobalto hover:text-cobalto text-pizarra px-6 py-3 rounded-xl transition-all"
               >
                 Ver calendario
-              </Link>
+              </Link> */}
+
             </div>
           </div>
         </div>
