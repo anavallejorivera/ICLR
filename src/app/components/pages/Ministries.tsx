@@ -14,7 +14,7 @@ const ministries = [
     meta: "Sábados · 8:00 AM",
   },
   {
-    title: "Ministerio de Danas",
+    title: "Ministerio de Damas",
     tag: "Hermandad",
     icon: Heart,
     color: "naranja",
@@ -85,7 +85,7 @@ export function Ministries() {
             Un lugar para cada <span className="italic text-cobalto">temporada</span> de la vida.
           </h2>
           <p className="text-lg text-pizarra leading-relaxed">
-            Nueve comunidades, una familia. Explorá dónde encajás.
+            cinco ministerios, una familia. Explora tu lugar.
           </p>
         </div>
 

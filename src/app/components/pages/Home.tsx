@@ -35,12 +35,11 @@ const handsRaisedImg =
   "https://images.unsplash.com/photo-1662151820001-0c8d949304a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=80";
 
 const ministries = [
-  { name: "Ministerio de Hombres", icon: Users, color: "cobalto", img: youngMenImg, desc: "Hermandad, rendición de cuentas y crecimiento." },
-  { name: "Ministerio de Mujeres", icon: Heart, color: "naranja", img: readingImg, desc: "Una hermandad arraigada en la fe y el propósito." },
-  { name: "Jóvenes", icon: Sparkles, color: "oro", img: bibleStudyImg, desc: "Empoderando a la próxima generación." },
+  { name: "Ministerio de Caballeros", icon: Users, color: "cobalto", img: youngMenImg, desc: "Hermandad, rendición de cuentas y crecimiento." },
+  { name: "Ministerio de Damas", icon: Heart, color: "naranja", img: readingImg, desc: "Una hermandad arraigada en la fe y el propósito." },
+  { name: "Ministerio de Jóvenes", icon: Sparkles, color: "oro", img: bibleStudyImg, desc: "Empoderando a la próxima generación." },
   { name: "Niños", icon: Baby, color: "cian-link", img: familyImg, desc: "Aprendizaje seguro, divertido y centrado en Cristo." },
-  { name: "Misiones", icon: Globe, color: "pizarra", img: crossImg, desc: "Llevando esperanza a nuestra ciudad y al mundo." },
-  { name: "Oración", icon: HandHeart, color: "cobalto", img: prayerImg, desc: "De pie juntos delante de Dios." },
+  { name: "Obra Social", icon: Globe, color: "pizarra", img: crossImg, desc: "Llevando esperanza a nuestra ciudad y al mundo." },
 ];
 
 const gallery = [
