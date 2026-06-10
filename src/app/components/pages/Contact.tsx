@@ -12,7 +12,7 @@ const contactItems = [
     icon: MapPin,
     color: "cobalto",
     label: "Dirección",
-    lines: ["Calle Fe 123", "Ciudad, Provincia 1234"],
+    lines: ["Calle Diego maria crehuet 13", "Cáceres, Cáceres"],
   },
   {
     icon: Phone,
@@ -98,10 +98,10 @@ export function Contact() {
           {/* Form — 3 cols */}
           <div className="lg:col-span-3 bg-white rounded-3xl shadow-xl p-8 md:p-10">
             <span className="text-naranja uppercase tracking-widest text-sm mb-3 inline-block">
-              Escribinos
+              Conecta
             </span>
             <h2 className="text-3xl md:text-4xl text-navy-dark mb-8 leading-tight">
-              Envianos un mensaje
+              Contacta con nosotros
             </h2>
 
             {submitted ? (
@@ -194,10 +194,12 @@ export function Contact() {
                   Enviar mensaje
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </button>
+¨{
+/*
 
                 <p className="text-xs text-acero text-center">
                   Respondemos en menos de 24 horas · Tu información es privada
-                </p>
+                </p> */}
               </form>
             )}
           </div>
