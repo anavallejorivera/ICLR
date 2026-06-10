@@ -14,37 +14,37 @@ const prayerBgImg =
 
 const pastors = [
   {
-    name: "Rev. Miguel Johnson",
+    name: "Luis Acosta",
     role: "Pastor Principal",
     tag: "Liderazgo",
     color: "cobalto",
     icon: BookOpen,
     img: seniorPastorImg,
-    bio: "El Pastor Miguel lleva más de 15 años sirviendo a nuestra congregación. Su pasión por enseñar la Palabra de Dios y pastorear a las personas ha transformado incontables vidas. Tiene una Maestría en Divinidad y está comprometido a guiar nuestra comunidad con sabiduría y gracia.",
+    bio: "El Pastor Luis lleva más de 15 años sirviendo a nuestra congregación. Su pasión por enseñar la Palabra de Dios y pastorear a las personas ha transformado incontables vidas. Tiene una Maestría en Divinidad y está comprometido a guiar nuestra comunidad con sabiduría y gracia.",
     verse: "\"Apacienta mis ovejas.\" — Juan 21:17",
     years: "15+ años",
     focus: "Predicación & Discipulado",
   },
   {
-    name: "Rev. Sara Martínez",
+    name: "Shirley Der Megerdichian",
     role: "Pastora Asociada",
     tag: "Juventud",
     color: "naranja",
     icon: Heart,
     img: associatePastorImg,
-    bio: "La Pastora Sara se unió a nuestro equipo en 2018 y lidera los ministerios de jóvenes y adultos jóvenes. Su estilo dinámico de enseñanza y su genuino cuidado por las personas la convierten en una líder muy querida. Tiene un corazón para el discipulado y para guiar a la próxima generación.",
+    bio: "La Pastora Shirley se unió a nuestro equipo en 2018 y lidera los ministerios de jóvenes y adultos jóvenes. Su estilo dinámico de enseñanza y su genuino cuidado por las personas la convierten en una líder muy querida. Tiene un corazón para el discipulado y para guiar a la próxima generación.",
     verse: "\"No desprecies tu juventud.\" — 1 Timoteo 4:12",
     years: "7 años",
     focus: "Jóvenes & Adultos Jóvenes",
   },
   {
-    name: "Rev. David Chen",
-    role: "Pastor de Adoración",
+    name: "Juan Camilo y Victoria ",
+    role: "Lideres de Jóvenes y Adoración",
     tag: "Música",
     color: "oro",
     icon: Music,
     img: worshipPastorImg,
-    bio: "El Pastor David lidera nuestro ministerio de adoración con excelencia y pasión. Con más de 20 años de experiencia en el ministerio musical, crea una atmósfera donde las personas pueden encontrarse con la presencia de Dios. Su compromiso con la excelencia inspira a todo nuestro equipo.",
+    bio: "Lideran nuestro ministerio de jóvenes y adoración con excelencia y pasión. Con más de 20 años de experiencia en el ministerio musical, crean una atmósfera donde las personas pueden encontrarse con la presencia de Dios. Su compromiso con la excelencia inspira a todo nuestro equipo.",
     verse: "\"Cantad al Señor un cántico nuevo.\" — Salmo 96:1",
     years: "20+ años",
     focus: "Adoración & Artes",
@@ -232,39 +232,6 @@ export function Pastors() {
                     Ver reuniones
                   </Link>
                 </div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 space-y-5">
-                <h3 className="text-2xl text-oro mb-2">Solicitud de oración</h3>
-                <p className="text-white/80 text-sm leading-relaxed">
-                  Nuestro equipo de intercesión ora cada semana por los pedidos que recibimos. Compartí lo que está en tu corazón.
-                </p>
-                {[
-                  { label: "Tu nombre", placeholder: "Juan García", type: "text" },
-                  { label: "Tu pedido", placeholder: "¿Por qué podemos orar por ti?", type: "textarea" },
-                ].map((field) =>
-                  field.type === "textarea" ? (
-                    <div key={field.label}>
-                      <label className="block text-white/80 text-sm mb-2">{field.label}</label>
-                      <textarea
-                        rows={3}
-                        placeholder={field.placeholder}
-                        className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-oro transition-colors resize-none text-sm"
-                      />
-                    </div>
-                  ) : (
-                    <div key={field.label}>
-                      <label className="block text-white/80 text-sm mb-2">{field.label}</label>
-                      <input
-                        type={field.type}
-                        placeholder={field.placeholder}
-                        className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-oro transition-colors text-sm"
-                      />
-                    </div>
-                  )
-                )}
-                <button className="w-full bg-oro hover:bg-oro/90 text-navy-dark py-3 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
-                  <Heart size={16} /> Enviar pedido de oración
-                </button>
               </div>
             </div>
           </div>
