@@ -157,7 +157,7 @@ export function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <span className="text-oro uppercase tracking-widest text-sm mb-4 inline-block">
-                Último sermón
+                VISITANOS EN YOUTUBE
               </span>
               <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
                 Encontrando paz en tiempos <span className="italic text-oro">inciertos</span>
@@ -165,17 +165,13 @@ export function Home() {
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 El Pastor Miguel Johnson nos guía a través de Filipenses 4 y nos muestra cómo la paz de Dios puede guardar nuestros corazones y mentes, incluso cuando todo parece incierto.
               </p>
-              <div className="flex flex-wrap gap-6 text-sm text-white/70 mb-8">
-                <span className="flex items-center gap-2"><Calendar size={16} /> 19 de abril, 2026</span>
-                <span className="flex items-center gap-2"><Play size={16} /> 38 min</span>
-              </div>
               <a
                 href="https://www.youtube.com"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 bg-naranja hover:bg-naranja/90 text-white px-6 py-3 rounded-xl transition-all"
               >
-                <Play size={16} /> Ver sermón completo
+                <Play size={16} /> Ver canal
               </a>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black group cursor-pointer">
