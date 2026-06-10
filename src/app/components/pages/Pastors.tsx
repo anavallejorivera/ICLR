@@ -181,13 +181,7 @@ export function Pastors() {
                     <Quote className={`text-${pastor.color} mb-2`} size={22} />
                     <p className="text-navy-dark italic leading-relaxed">{pastor.verse}</p>
                   </div>
-                  <Link
-                    to="/contact"
-                    className={`inline-flex items-center gap-2 bg-${pastor.color} hover:opacity-90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5 group`}
-                  >
-                    Conectar con el pastor
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  
                 </div>
               </div>
             </div>
@@ -211,7 +205,7 @@ export function Pastors() {
                   Estamos aquí para ti
                 </span>
                 <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
-                  ¿Querés hablar con{" "}
+                  ¿Quieres hablar con{" "}
                   <span className="italic text-oro">un pastor</span>?
                 </h2>
                 <p className="text-white/85 text-lg leading-relaxed mb-8">
