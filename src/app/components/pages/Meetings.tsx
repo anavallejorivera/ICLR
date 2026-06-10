@@ -155,13 +155,15 @@ export function Meetings() {
                 );
               })}
             </div>
-
+{/*
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 bg-naranja hover:bg-naranja/90 text-white px-7 py-4 rounded-xl transition-all shadow-lg shadow-naranja/20 hover:-translate-y-0.5"
             >
               Acompañanos este domingo <ArrowRight size={16} />
-            </Link>
+            </Link> */}
+
+
           </div>
         </div>
       </section>

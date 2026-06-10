@@ -147,12 +147,15 @@ export function Ministries() {
             <p className="text-lg text-white/85 leading-relaxed mb-10">
               Cada don, cada hora, cada "sí" importa. cuentanos un poco sobre ti y te ayudaremos a encontrar tu lugar para servir.
             </p>
-            <Link
+            {/*
+                <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-oro hover:bg-oro/90 text-navy-dark px-8 py-4 rounded-xl transition-all shadow-lg hover:-translate-y-0.5 display:none"
+              className="inline-flex items-center gap-2 bg-oro hover:bg-oro/90 text-navy-dark px-8 py-4 rounded-xl transition-all shadow-lg hover:-translate-y-0.5"
             >
               Conectate <ArrowRight size={16} />
             </Link>
+            */}
+          
           </div>
         </div>
       </section>
