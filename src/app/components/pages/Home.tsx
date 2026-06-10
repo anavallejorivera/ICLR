@@ -231,52 +231,98 @@ export function Home() {
         </div>
       </section>
 
-      {/* ===== MINISTRIES GRID ===== */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Encuentra tu lugar
-            </span>
-            <h2 className="text-4xl md:text-5xl text-navy-dark mb-6">
-              Ministerios para cada <span className="italic text-cobalto">temporada</span>
-            </h2>
-            <p className="text-lg text-pizarra leading-relaxed">
-              Desde los más pequeños hasta los abuelos, hay una comunidad esperando caminar con vos.
-            </p>
-          </div>
+    {/* ===== MINISTRIES GRID ===== */}
+<section className="bg-white py-20 lg:py-28">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center max-w-2xl mx-auto mb-16">
+      <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
+        Encuentra tu lugar
+      </span>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ministries.map((m) => {
-              const Icon = m.icon;
-              return (
-                <Link
-                  key={m.name}
-                  to="/ministries"
-                  className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all hover:-translate-y-1 aspect-[4/5]"
-                >
-                  <img
-                    src={m.img}
-                    alt={m.name}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy-dark/50 to-transparent" />
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                    <div className={`w-12 h-12 rounded-full bg-${m.color} flex items-center justify-center mb-4 shadow-lg`}>
-                      <Icon size={20} />
-                    </div>
-                    <h3 className="text-2xl mb-2">{m.name}</h3>
-                    <p className="text-white/80 text-sm mb-3">{m.desc}</p>
-                    <span className="inline-flex items-center gap-1 text-oro text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                      Ver más <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <h2 className="text-4xl md:text-5xl text-navy-dark mb-6">
+        Ministerios para cada{" "}
+        <span className="italic text-cobalto">temporada</span>
+      </h2>
+
+      <p className="text-lg text-pizarra leading-relaxed">
+        Desde los más pequeños hasta los abuelos, hay una comunidad esperando
+        caminar con vos.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      {[
+        ...ministries.filter((m) => m.name === "Obra Social"),
+        ...ministries.filter((m) => m.name !== "Obra Social"),
+      ].map((m) => {
+        const Icon = m.icon;
+        const isFeatured = m.name === "Obra Social";
+
+        return (
+          <Link
+            key={m.name}
+            to="/ministries"
+            className={`
+              group relative overflow-hidden rounded-2xl shadow-md hover:shadow-2xl
+              transition-all hover:-translate-y-1
+              ${
+                isFeatured
+                  ? "md:col-span-2 md:row-span-2 min-h-[350px] md:min-h-[520px]"
+                  : "min-h-[260px]"
+              }
+            `}
+          >
+            <img
+              src={m.img}
+              alt={m.name}
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy-dark/55 to-transparent" />
+
+            <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
+              {isFeatured && (
+                <span className="absolute top-6 left-6 bg-naranja text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                  Destacado
+                </span>
+              )}
+
+              <div
+                className={`w-12 h-12 rounded-full bg-${m.color} flex items-center justify-center mb-4 shadow-lg`}
+              >
+                <Icon size={20} />
+              </div>
+
+              <h3
+                className={
+                  isFeatured
+                    ? "text-3xl md:text-4xl mb-3"
+                    : "text-2xl mb-2"
+                }
+              >
+                {m.name}
+              </h3>
+
+              <p
+                className={
+                  isFeatured
+                    ? "text-white/85 text-base mb-4 max-w-md"
+                    : "text-white/80 text-sm mb-3"
+                }
+              >
+                {m.desc}
+              </p>
+
+              <span className="inline-flex items-center gap-1 text-oro text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                Ver más <ArrowRight size={14} />
+              </span>
+            </div>
+          </Link>
+        );
+      })}
+    </div>
+  </div>
+</section>
 
       {/* ===== GALLERY ===== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
