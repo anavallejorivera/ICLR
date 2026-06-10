@@ -7,14 +7,10 @@ import {
   Calendar,
   MapPin,
   ArrowRight,
-  Quote,
-  ChevronLeft,
-  ChevronRight,
   HandHeart,
   Baby,
   Globe,
 } from "lucide-react";
-import { useState, useEffect } from "react";
 
 const heroImg =
   "https://images.unsplash.com/photo-1775400713633-e4b2b3577fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=2000&q=80";
@@ -46,27 +42,6 @@ const ministries = [
   { name: "Oración", icon: HandHeart, color: "cobalto", img: prayerImg, desc: "De pie juntos delante de Dios." },
 ];
 
-const testimonials = [
-  {
-    name: "María González",
-    role: "Miembro desde 2019",
-    img: "https://images.unsplash.com/photo-1772242859666-67d57946c3a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80",
-    quote: "La Iglesia Cristo La Roca se siente como un hogar. El amor y el apoyo que encontré aquí transformó mi caminar con Dios.",
-  },
-  {
-    name: "Javier & Sara Wilson",
-    role: "Casados en 2023",
-    img: "https://images.unsplash.com/photo-1662151939035-7b7651690c2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80",
-    quote: "Nos conocimos en un grupo pequeño y crecimos juntos en la fe. Esta iglesia es donde se construyó nuestra familia.",
-  },
-  {
-    name: "David Okafor",
-    role: "Líder de Jóvenes",
-    img: "https://images.unsplash.com/photo-1631801752478-f45b08891d66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80",
-    quote: "De estar perdido a liderar — esta comunidad me dio un propósito y una familia que nunca supe que necesitaba.",
-  },
-];
-
 const gallery = [
   { src: communityImg, h: "h-80" },
   { src: handsRaisedImg, h: "h-56" },
@@ -79,13 +54,6 @@ const gallery = [
 ];
 
 export function Home() {
-  const [testimonialIdx, setTestimonialIdx] = useState(0);
-
-  useEffect(() => {
-    const t = setInterval(() => setTestimonialIdx((i) => (i + 1) % testimonials.length), 6000);
-    return () => clearInterval(t);
-  }, []);
-
   return (
     <div>
       {/* ===== HERO ===== */}
@@ -117,7 +85,7 @@ export function Home() {
                   href="#sermon"
                   className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/30 text-white px-7 py-4 rounded-xl transition-all"
                 >
-                  <Play size={16} /> Ver último sermón
+                  <Play size={16} /> Visita nuestro YouTube
                 </a>
               </div>
             </div>
@@ -310,70 +278,6 @@ export function Home() {
                 </Link>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== TESTIMONIALS ===== */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-hueso via-white to-hueso overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cobalto/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-naranja/5 rounded-full blur-3xl" />
-
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Testimonios
-            </span>
-            <h2 className="text-4xl md:text-5xl text-navy-dark">De nuestra familia</h2>
-          </div>
-
-          <div className="relative bg-white rounded-3xl shadow-xl p-8 md:p-14 min-h-[360px]">
-            <Quote className="text-oro mb-6" size={48} />
-            <div key={testimonialIdx} className="animate-[fadeIn_0.6s_ease]">
-              <p className="text-xl md:text-2xl text-navy-dark leading-relaxed mb-8 italic">
-                "{testimonials[testimonialIdx].quote}"
-              </p>
-              <div className="flex items-center gap-4">
-                <img
-                  src={testimonials[testimonialIdx].img}
-                  alt={testimonials[testimonialIdx].name}
-                  className="w-16 h-16 rounded-full object-cover shadow-md"
-                />
-                <div>
-                  <div className="text-navy-dark">{testimonials[testimonialIdx].name}</div>
-                  <div className="text-sm text-pizarra">{testimonials[testimonialIdx].role}</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between mt-10">
-              <div className="flex gap-2">
-                {testimonials.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setTestimonialIdx(i)}
-                    className={`h-2 rounded-full transition-all ${
-                      i === testimonialIdx ? "w-8 bg-cobalto" : "w-2 bg-acero/40"
-                    }`}
-                    aria-label={`Go to testimonial ${i + 1}`}
-                  />
-                ))}
-              </div>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setTestimonialIdx((i) => (i - 1 + testimonials.length) % testimonials.length)}
-                  className="w-10 h-10 rounded-full border border-acero/30 hover:bg-cobalto hover:text-white hover:border-cobalto text-pizarra flex items-center justify-center transition-all"
-                >
-                  <ChevronLeft size={18} />
-                </button>
-                <button
-                  onClick={() => setTestimonialIdx((i) => (i + 1) % testimonials.length)}
-                  className="w-10 h-10 rounded-full border border-acero/30 hover:bg-cobalto hover:text-white hover:border-cobalto text-pizarra flex items-center justify-center transition-all"
-                >
-                  <ChevronRight size={18} />
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

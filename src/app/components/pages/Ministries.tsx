@@ -5,7 +5,7 @@ const heroImg = "https://images.unsplash.com/photo-1760367120244-8db5e65191a4?cr
 
 const ministries = [
   {
-    title: "Ministerio de Hombres",
+    title: "Ministerio de Caballeros",
     tag: "Hermandad",
     icon: Users,
     color: "cobalto",
@@ -14,7 +14,7 @@ const ministries = [
     meta: "Sábados · 8:00 AM",
   },
   {
-    title: "Ministerio de Mujeres",
+    title: "Ministerio de Danas",
     tag: "Hermandad",
     icon: Heart,
     color: "naranja",
@@ -40,33 +40,7 @@ const ministries = [
     desc: "Seguro, divertido y centrado en Cristo. Desde la guardería hasta 5.º grado, plantamos semillas que crecen toda una vida.",
     meta: "Domingos · 9 y 11 AM",
   },
-  {
-    title: "Misiones",
-    tag: "Ir",
-    icon: Globe,
-    color: "pizarra",
-    img: "https://images.unsplash.com/photo-1758599667717-27c61bcdd14b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80",
-    desc: "Desde nuestro barrio hasta las naciones. Sirviendo, yendo y asociándonos con quienes llevan esperanza al mundo.",
-    meta: "Alcance durante todo el año",
-  },
-  {
-    title: "Adoración",
-    tag: "Música",
-    icon: Music,
-    color: "naranja",
-    img: "https://images.unsplash.com/photo-1662151820001-0c8d949304a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80",
-    desc: "Músicos, vocalistas y creativos técnicos usando sus dones para elevar corazones y apuntar cada domingo hacia Jesús.",
-    meta: "Ensayos · Jueves",
-  },
-  {
-    title: "Oración",
-    tag: "Intercesión",
-    icon: HandHeart,
-    color: "cobalto",
-    img: "https://images.unsplash.com/photo-1662151926492-abb5c7ae485c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80",
-    desc: "De pie en la brecha por nuestra iglesia, nuestra ciudad y el mundo. Un ministerio silencioso y poderoso que sostiene todo lo demás.",
-    meta: "Martes · 6:00 AM",
-  },
+
   {
     title: "Obra Social",
     tag: "Compasión",
@@ -76,15 +50,7 @@ const ministries = [
     desc: "Llevamos esperanza donde más se necesita: comedores, visitas a hogares, ayuda a familias vulnerables y acompañamiento a los que sufren.",
     meta: "Sábados · Actividades semanales",
   },
-  {
-    title: "Voluntarios",
-    tag: "Servir",
-    icon: Users,
-    color: "oro",
-    img: "https://images.unsplash.com/photo-1760992003923-ed5d455c1164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80",
-    desc: "Hospitalidad, instalación, estacionamiento, recepcionistas — el domingo sucede gracias a vos. Encontrá el equipo que se adapta a cómo Dios te hizo.",
-    meta: "Todos los domingos",
-  },
+ 
 ];
 
 export function Ministries() {

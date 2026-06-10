@@ -273,25 +273,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Prayer CTA */}
-            <div className="relative rounded-3xl overflow-hidden shadow-xl">
-              <img src={prayerImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-br from-cobalto/95 to-navy-dark/95" />
-              <div className="relative p-8 text-white">
-                <Heart className="text-oro mb-4" size={32} />
-                <h3 className="text-2xl mb-3">¿Necesitás oración?</h3>
-                <p className="text-white/80 text-sm leading-relaxed mb-5">
-                  Nuestro equipo de intercesión está listo para llevar tus pedidos delante de Dios.
-                </p>
-                <Link
-                  to="/pastors"
-                  className="inline-flex items-center gap-2 bg-oro hover:bg-oro/90 text-navy-dark px-5 py-2.5 rounded-xl transition-all text-sm group"
-                >
-                  Enviar pedido
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -308,7 +289,7 @@ export function Contact() {
           </div>
           <div>
             <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Venís como sos
+              Ven tal como eres
             </span>
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
               Visitanos este domingo
