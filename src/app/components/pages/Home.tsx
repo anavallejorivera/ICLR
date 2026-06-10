@@ -283,7 +283,7 @@ export function Home() {
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
               {isFeatured && (
                 <span className="absolute top-6 left-6 bg-naranja text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                  Destacado
+                  Comunidad y Servicio
                 </span>
               )}
 
