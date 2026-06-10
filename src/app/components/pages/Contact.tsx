@@ -231,7 +231,7 @@ export function Contact() {
               </div>
 
               <div className="mt-6 pt-6 border-t border-black/5">
-                <p className="text-sm text-acero mb-3">Seguinos en redes</p>
+                <p className="text-sm text-acero mb-3">Síguenos en redes</p>
                 <div className="flex gap-3">
                   {[Facebook, Instagram, Youtube].map((Ic, i) => (
                     <a
@@ -247,7 +247,7 @@ export function Contact() {
             </div>
 
             {/* Hours card */}
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            {/* <div className="bg-white rounded-3xl shadow-xl p-8">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 bg-naranja/10 rounded-xl flex items-center justify-center">
                   <Clock className="text-naranja" size={20} />
@@ -273,7 +273,7 @@ export function Contact() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
