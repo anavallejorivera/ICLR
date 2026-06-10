@@ -173,7 +173,7 @@ export function History() {
               to="/contact"
               className="inline-flex items-center gap-2 bg-oro hover:bg-oro/90 text-navy-dark px-7 py-4 rounded-xl transition-all shadow-lg hover:-translate-y-0.5"
             >
-              Unite a la historia <ArrowRight size={16} />
+              Únete a la historia <ArrowRight size={16} />
             </Link>
             <Link
               to="/ministries"
@@ -185,7 +185,7 @@ export function History() {
 
           <div className="grid grid-cols-3 gap-8 mt-16 pt-12 border-t border-white/20 max-w-2xl mx-auto">
             <div>
-              <div className="text-4xl text-oro mb-2">40+</div>
+              <div className="text-4xl text-oro mb-2">20+</div>
               <div className="text-sm text-white/70 flex items-center justify-center gap-1.5"><Heart size={14}/> Años</div>
             </div>
             <div>
@@ -193,7 +193,7 @@ export function History() {
               <div className="text-sm text-white/70 flex items-center justify-center gap-1.5"><Users size={14}/> Miembros</div>
             </div>
             <div>
-              <div className="text-4xl text-oro mb-2">12</div>
+              <div className="text-4xl text-oro mb-2">5</div>
               <div className="text-sm text-white/70 flex items-center justify-center gap-1.5"><Sparkles size={14}/> Ministerios</div>
             </div>
           </div>
