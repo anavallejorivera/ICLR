@@ -5,9 +5,8 @@ const heroImg = "https://images.unsplash.com/photo-1762013728525-4e093240ae7b?cr
 const sundayImg = "https://images.unsplash.com/photo-1775400713633-e4b2b3577fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1400&q=80";
 
 const sundays = [
-  { time: "9:00 AM", title: "Primer culto", desc: "Adoración contemporánea y predicación", icon: Music, color: "cobalto" },
+  { time: "9:00 AM", title: "Reunión de domingo", desc: " ", icon: Music, color: "cobalto" },
   { time: "10:30 AM", title: "Escuela dominical", desc: "Todas las edades, distintas aulas", icon: BookOpen, color: "oro" },
-  { time: "11:00 AM", title: "Segundo culto", desc: "El mismo mensaje, diferente horario", icon: Music, color: "cobalto" },
 ];
 
 const midweek = [
@@ -129,9 +128,9 @@ export function Meetings() {
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
               La <span className="italic text-cobalto">reunión</span> principal.
             </h2>
-            <p className="text-lg text-pizarra leading-relaxed mb-10">
+            {/* <p className="text-lg text-pizarra leading-relaxed mb-10">
               Adoración dinámica, enseñanza práctica y una comunidad que recibe. Ambos cultos ofrecen la misma experiencia — venís cuando más te convenga.
-            </p>
+            </p> */}
 
             <div className="space-y-4 mb-8">
               {sundays.map((s) => {
@@ -173,7 +172,7 @@ export function Meetings() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-naranja uppercase tracking-widest text-sm mb-4 inline-block">
-              Ritmos entre semana
+              Reuniones entre semana
             </span>
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
               Fe entre <span className="italic text-cobalto">domingos</span>.
@@ -285,7 +284,7 @@ export function Meetings() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-10">
             {[
-              { icon: MapPin, color: "cobalto", title: "Dónde", body: "Calle Fe 123\nCiudad, Provincia 1234" },
+              { icon: MapPin, color: "cobalto", title: "Dónde", body: "Calle Maria Crehuet\nCáceres, Cáceres 10001" },
               { icon: Users, color: "naranja", title: "Vestimenta", body: "Vienes tal como eres.\nLo casual está perfecto." },
               { icon: Clock, color: "oro", title: "Llegá temprano", body: "15 minutos antes\npara café y saludos." },
             ].map((i) => {
