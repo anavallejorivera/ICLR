@@ -23,9 +23,10 @@ export function Root() {
     { path: "/", label: "Inicio" },
     { path: "/history", label: "Historia" },
     { path: "/pastors", label: "Pastores" },
-    { path: "/ministries", label: "Ministerios" },
+
+    // { path: "/ministries", label: "Ministerios" },
+
     { path: "/meetings", label: "Reuniones" },
-    { path: "/contact", label: "Contacto" },
   ];
 
   const isHome = location.pathname === "/";
