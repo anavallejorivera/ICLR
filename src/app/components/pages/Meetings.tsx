@@ -234,9 +234,6 @@ export function Meetings() {
               Marcá tu <span className="italic text-cobalto">calendario</span>.
             </h2>
           </div>
-          <Link to="/contact" className="text-cobalto hover:text-naranja inline-flex items-center gap-2 group">
-            Recibir recordatorios <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
