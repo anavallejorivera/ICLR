@@ -89,17 +89,17 @@ export function Meetings() {
               Cuando nos reunimos
             </span>
             <h1 className="text-5xl md:text-7xl mb-6 leading-tight max-w-3xl">
-              Te esperamos el <span className="italic text-oro">domingo</span>.
+              Te esperamos cada <span className="italic text-oro">semana</span>.
             </h1>
             <p className="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
-              Cultos, estudios y momentos donde la fe se vuelve real. Todos bienvenidos — venís como sos.
+              Cultos, estudios y momentos donde la fe se vuelve real. Todos bienvenidos — ven tal como eres.
             </p>
           </div>
         </div>
       </section>
 
       {/* SUNDAY FEATURED */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-cobalto/10 rounded-3xl -z-10" />
@@ -128,9 +128,9 @@ export function Meetings() {
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
               La <span className="italic text-cobalto">reunión</span> principal.
             </h2>
-            {/* <p className="text-lg text-pizarra leading-relaxed mb-10">
+             <p className="text-lg text-pizarra leading-relaxed mb-10">
               Adoración dinámica, enseñanza práctica y una comunidad que recibe. Ambos cultos ofrecen la misma experiencia — venís cuando más te convenga.
-            </p> */}
+            </p> 
 
             <div className="space-y-4 mb-8">
               {sundays.map((s) => {
@@ -154,18 +154,18 @@ export function Meetings() {
                 );
               })}
             </div>
-{/*
+
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 bg-naranja hover:bg-naranja/90 text-white px-7 py-4 rounded-xl transition-all shadow-lg shadow-naranja/20 hover:-translate-y-0.5"
             >
               Acompañanos este domingo <ArrowRight size={16} />
-            </Link> */}
+            </Link> 
 
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* MIDWEEK */}
       <section className="bg-white py-20 lg:py-28">
@@ -175,7 +175,7 @@ export function Meetings() {
               Reuniones entre semana
             </span>
             <h2 className="text-4xl md:text-5xl text-navy-dark mb-6 leading-tight">
-              Fe entre <span className="italic text-cobalto">domingos</span>.
+              Comparte con tu <span className="italic text-cobalto">comunidad</span>.
             </h2>
             <p className="text-lg text-pizarra leading-relaxed">
               Más pequeños, más profundos, más cercanos. Así seguimos creciendo durante la semana.
